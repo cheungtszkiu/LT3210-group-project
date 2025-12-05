@@ -1,0 +1,251 @@
+.intro-section {
+  background: #ffffff;
+  padding: 24px 26px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.intro-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.intro-section p {
+  margin-bottom: 14px;
+  color: #374151;
+}
+
+.rq-list {
+  margin-left: 18px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.rq-list li {
+  margin-bottom: 6px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f9fafb);
+    color: #111827;
+    line-height: 1.6;
+}
+
+.page-wrapper {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 16px 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.question-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.question-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    border-color: #c7d2fe;
+}
+
+.question-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.question-meta {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-bottom: 8px;
+}
+
+.option-list {
+    list-style: none;
+    margin-top: 4px;
+}
+
+.option-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    background: #f9fafb;
+}
+
+.option-count {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #e5e7eb;
+    min-width: 32px;
+    text-align: center;
+}
+
+.option-item.has-votes {
+    background: #eef2ff;
+}
+
+.option-item.has-votes.option-count {
+    background: #c7d2fe;
+}
+
+.option-item.no-votes {
+    opacity: 0.6;
+}
+
+.option-item.top-choice {
+    background: #dbeafe;
+    border: 1px solid #60a5fa;
+}
+
+.option-item.top-choice.option-count {
+    background: #3b82f6;
+    color: #ffffff;
+}
+
+.legend {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-bottom: 16px;
+    text-align: right;
+}
+
+.pie-card {
+  margin-top: 16px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.pie-card h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.pie-chart {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto 12px auto;
+  background: conic-gradient(var(--segments));
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.pie-legend {
+  margin-top: 10px;
+}
+
+.pie-legend div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.pie-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+.pie-label {
+  position: absolute;
+  font-size: 0.85rem;
+  background: rgba(255,255,255,0.75);
+  padding: 2px 6px;
+  border-radius: 6px;
+  transform: translate(-50%, -50%);
+  color: #111827;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .question-card {
+        padding: 14px 12px;
+    }
+    .question-title {
+        font-size: 0.95rem;
+    }
+    header h1 {
+        font-size: 1.4rem;
+    }
+ }
+
+.footer-section {
+  background: #ffffff;
+  padding: 24px 26px;
+  border-radius: 16px;
+  margin-top: 32px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.footer-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.footer-section p {
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.declaration-section {
+  background: #ffffff;
+  padding: 24px 26px;
+  border-radius: 16px;
+  margin-top: 32px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.declaration-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.declaration-section p {
+  margin-bottom: 12px;
+  color: #374151;
+}
